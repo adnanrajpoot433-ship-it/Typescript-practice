@@ -61,10 +61,68 @@ console.log(numbers1);
  //7) Splice() >> - adds/removes elements from an array (from everywhere)
  // Syntax: array_name.Splice( start, deleteCount, item1,....item2...item N)
  // it return the deleted elements
+
+ //EX1) ONLY REMOVING
  let scores :number []= [85, 90, 75, 60, 100];
 
- let removedElemet: number[] =scores.splice (1,2);
- console.log ( "after splice:", removedElemet); // after splice: [ 90, 75 ] 
+ let removedElemet: number[] =scores.splice (1,2); //here 1 is starting index, 2 is representing how many we want to delete
+ console.log(scores); // array after splice
+ console.log ( "after splice:", removedElemet); // after splice: [ 90, 75 ]
+ 
+//EX2) ONLY ADDING
+
+scores.splice(1,0,70,80); 
+console.log(scores); 
+
+
+
+//8) indexof()>> finds the index of the element,if no element then return -1
+//Syntax: array-name.indexof(searchElement) or 
+
+//EX1) here will rerun the value 
+
+let bowlers: string[] = ["Shaheen Afridi", "Bumrah", "Starc", "Rabada"];
+
+let bumrhaIndex= bowlers.indexOf("Bumrah");
+
+console.log(bumrhaIndex);
+
+//EX2) here will return -1
+
+let bowlers1: string[] = ["Shaheen Afridi", "Bumrah", "Starc", "Rabada"];
+
+let ShadabIndex= bowlers1.indexOf("SHADAB");
+
+console.log(ShadabIndex);
+
+//EX3)  array-name.indexof(searchelement,starting index)
+
+let bowlers2: string[] = ["Shaheen Afridi", "Bumrah", "Starc", "Rabada"];
+
+let starcIndex= bowlers2.indexOf("Starc",1)
+
+console.log(starcIndex); 
+
+
+//9) Includes()>> check if an element exists 
+// return true or false
+// Syntax: array-name.includes(SearchElement, fromIndex)
+
+let browsers: string[] = ["chrome", "firefox", "edge"];
+
+console.log(browsers.includes("chrome")); // true
+console.log(browsers.includes("safari")); // false 
+
+
+//10) toString() >> convert array to string 
+// Syntax: array-name.toString()
+
+let scores22 :number []= [85, 90, 75, 60, 100]; 
+
+let numbersString= scores22.toString();
+
+console.log(numbersString);
+
 
 
 
