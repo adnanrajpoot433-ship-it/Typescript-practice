@@ -60,10 +60,11 @@ console.log(numbers1);
 
  //7) Splice() >> - adds/removes elements from an array (from everywhere)
  // Syntax: array_name.Splice( start, deleteCount, item1,....item2...item N)
-
+ // it return the deleted elements
  let scores :number []= [85, 90, 75, 60, 100];
 
- scores.splice (1,)
+ let removedElemet: number[] =scores.splice (1,2);
+ console.log ( "after splice:", removedElemet);
 
 
 
