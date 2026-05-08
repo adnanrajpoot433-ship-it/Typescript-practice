@@ -64,7 +64,7 @@ console.log(numbers1);
  let scores :number []= [85, 90, 75, 60, 100];
 
  let removedElemet: number[] =scores.splice (1,2);
- console.log ( "after splice:", removedElemet);
+ console.log ( "after splice:", removedElemet); // after splice: [ 90, 75 ] 
 
 
 
