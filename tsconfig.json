@@ -1,23 +1,35 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
     "target": "ES2020",
+
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
+
     "lib": ["ES2020", "DOM"],
+
     "types": ["node"],
 
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
+    "rootDir": "./",
+    "outDir": "./dist",
 
     "strict": true,
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
-    "skipLibCheck": true
-  }
+
+    "sourceMap": true,
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    "skipLibCheck": true,
+
+    "forceConsistentCasingInFileNames": true,
+
+    "noImplicitAny": true,
+
+    "resolveJsonModule": true,
+
+    "verbatimModuleSyntax": false
+  },
+
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist"]
 }
